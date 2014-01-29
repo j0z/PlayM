@@ -1,0 +1,27 @@
+﻿<Window x:Class="PlayM_Controller_Legacy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        
+        Title="PlayM Legacy Controller" Height="750" Width="1200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="830*"/>
+            <ColumnDefinition Width="233*"/>
+            <ColumnDefinition Width="879*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Btn_Up" Content="Up" HorizontalAlignment="Left" Margin="26,470,0,0" VerticalAlignment="Top" Width="76" Height="67" Click="Btn_Up_Click" Grid.Column="1"/>
+        <Button x:Name="Btn_Left" Content="Left" HorizontalAlignment="Left" Margin="454,548,0,0" VerticalAlignment="Top" Width="76" Height="67" Click="Btn_Left_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="Btn_Right" Content="Right" HorizontalAlignment="Left" Margin="106,548,0,0" VerticalAlignment="Top" Width="76" Height="67" Click="Btn_Right_Click" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="Btn_Down" Content="Down" HorizontalAlignment="Left" Margin="26,624,0,0" VerticalAlignment="Top" Width="76" Height="68" Click="Btn_Down_Click" Grid.Column="1"/>
+        <Button x:Name="Btn_Ctrl" Content="Enter" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top" Width="108" Height="96" Click="Btn_Enter_Click" Grid.Column="1"/>
+        <Button x:Name="Btn_Space" Content="Space" HorizontalAlignment="Left" Margin="10,218,0,0" VerticalAlignment="Top" Width="108" Height="97" Click="Btn_Space_Click" Grid.Column="1"/>
+        <Button x:Name="Btn_W" Content="W" HorizontalAlignment="Left" Margin="151,66,0,0" VerticalAlignment="Top" Width="117" Height="104" ClickMode="Press" MouseDown="Btn_W_Start" MouseUp="Btn_W_End" TouchDown="Btn_W_Start" TouchUp="Btn_W_End"/>
+        <Button x:Name="Btn_A" Content="A" HorizontalAlignment="Left" Margin="26,185,0,0" VerticalAlignment="Top" Width="117" Height="104" MouseDown="Btn_A_Start" MouseUp="Btn_A_End" TouchDown="Btn_A_Start" TouchUp="Btn_A_End"/>
+        <Button x:Name="Btn_D" Content="D" HorizontalAlignment="Left" Margin="274,185,0,0" VerticalAlignment="Top" Width="117" Height="104" MouseDown="Btn_D_Start" MouseUp="Btn_D_End" TouchDown="Btn_D_Start" TouchUp="Btn_D_End"/>
+        <Button x:Name="Btn_S" Content="S" HorizontalAlignment="Left" Margin="151,303,0,0" VerticalAlignment="Top" Width="117" Height="105" MouseDown="Btn_S_Start" MouseUp="Btn_S_End" TouchDown="Btn_S_Start" TouchUp="Btn_S_End"/>
+        <Button x:Name="Btn_Escape" Content="Esc" HorizontalAlignment="Left" Margin="10,328,0,0" VerticalAlignment="Top" Width="108" Height="97" Click="Btn_Escape_Click" Grid.Column="1"/>
+        <Canvas x:Name="Touchpad" Grid.Column="2" HorizontalAlignment="Left" Height="270" Margin="30,138,0,0" VerticalAlignment="Top" Width="480" Background="#FFA2A2A2" TouchDown="Thumb_Down" TouchMove="Thumb_Down" MouseMove="Mouse_Move" TouchUp="Thumb_Up"/>
+        <Label x:Name="Lbl_Coords" Content="Label" Grid.Column="2" HorizontalAlignment="Left" Margin="88,48,0,0" VerticalAlignment="Top" Width="170" Height="56"/>
+
+    </Grid>
+</Window>
