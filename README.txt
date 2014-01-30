@@ -44,7 +44,7 @@
  * Buttons on the Legacy controller can "stick" if your finger leaves the button while it is depressed
  * The server GUI is completely worthless. 
  * There is no protection against connection of multiple clients (or proper handling at all).
- * The server cannot handle mouse button presses. 
+ * The server cannot handle mouse button holds. 
  * Client crashes if disconnected from the server.
 
  -------------------------------------------------------------------------------------------------------
@@ -76,8 +76,8 @@
 	[type];[message];[hold]
  Messages are terminated by a newline.
  [type] is either 'KB' or 'M'
-	'KB' is sent for a keyboard button press.
-	'M' is sent for either mouse movement or a mouse button press.
+	'KB' is sent for a keyboard button press. Also used for Mouse button presses. (See note below)
+	'M' is sent for either mouse movement.
  [message] specifies which key was pressed (as a single, capital character) or as a comma-deliminated tuple of type <str,str> in the case of a mouse, giving its x and y coordinates.  
  [hold] is only used for keyboard messages, and can only have the following values:
 	* 0 = (default) the button press was a click.
@@ -100,6 +100,10 @@ M;345,230;0 \n
 
 Yes, the trailing '0' is still needed for mouse movement.
 
+----Mouse Button Presses----
+Currently, mouse button clicks are sent as keyboard messages (with the "KB" type). I'm not too happy about this, because it is counter-intuitive, but
+the KB input function easily handles it, while it would take some reengineering to make the mouse input function accept it. I'll probably change this 
+eventually, but it'll have to do for now.
 
 You'll need to include the following to be able to compile PlayM:
 
@@ -110,3 +114,13 @@ You'll need to include the following to be able to compile PlayM:
  .NET 4.5 (Legacy Controller)
 
  Developed using VS2013
+
+
+ --------------CHANGELOG-------------------
+
+ v0.6a
+ + Mouse button (click) support
+
+
+ v0.5a
+ + Initial Release

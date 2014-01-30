@@ -21,17 +21,40 @@ namespace PlayM_GUI
         {
         }
 
+        // I don't like that mouse buttons are handled here. This will be fixed later. 
         public void keyPress(string rawKey, int hold = 0)
         {
-            KeysConverter kc = new KeysConverter();
-            Keys key = (Keys)kc.ConvertFromString(rawKey);
+            if (rawKey.Contains("M_"))
+            {
+                switch (rawKey)
+                {
+                    case ("M_1"):
+                        Mouse.PressButton(Mouse.MouseKeys.Left);
+                        break;
+                    case ("M_2"):
+                        Mouse.PressButton(Mouse.MouseKeys.Right);
+                        break;
+                    case ("M_3"):
+                        Mouse.PressButton(Mouse.MouseKeys.Middle);
+                        break;
+                    default:
+                        Console.WriteLine("Invalid Mouse Button Press");
+                        break;
 
-            if(hold==0)
-                Keyboard.KeyPress(key, 5);
-            else if(hold==1)
-                Keyboard.KeyDown(key);
+                }
+            }
             else
-                Keyboard.KeyUp(key);
+            {
+                KeysConverter kc = new KeysConverter();
+                Keys key = (Keys)kc.ConvertFromString(rawKey);
+
+                if (hold == 0)
+                    Keyboard.KeyPress(key, 5);
+                else if (hold == 1)
+                    Keyboard.KeyDown(key);
+                else
+                    Keyboard.KeyUp(key);
+            }
         }
 
         //This mess was an attempt to fix the jittery camera issue in FPS games. It was unsuccessful. However, it is a fairly nice mouse acceleration

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SOVEREIGN</Machine>
+    <WindowsUser>joshd_000</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>ef3dd16f-0bc6-474a-8737-4983d57851dc</PackageIdentityName>
+    <RegisteredManifestChecksum>5B9655764EB6C975564131354D7A29713D1E63C86646DF453DA6003CA6C0CA6F</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>ef3dd16f-0bc6-474a-8737-4983d57851dc_1.0.0.0_neutral__xz7ym93cpv53a</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>ef3dd16f-0bc6-474a-8737-4983d57851dc_xz7ym93cpv53a!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>ef3dd16f-0bc6-474a-8737-4983d57851dc</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=joshd_000</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\joshd_000.SOVEREIGN\Documents\GitHub\PlayM\Pupi\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-01-30T21:23:23.418</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\joshd_000.SOVEREIGN\Documents\GitHub\PlayM\Pupi\bin\Debug\Pupi.exe">
+      <PackagePath>Pupi.exe</PackagePath>
+      <Modified>2014-01-30T21:56:45.796</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\joshd_000.SOVEREIGN\Documents\GitHub\PlayM\Pupi\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T11:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\joshd_000.SOVEREIGN\Documents\GitHub\PlayM\Pupi\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T11:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\joshd_000.SOVEREIGN\Documents\GitHub\PlayM\Pupi\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T11:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\joshd_000.SOVEREIGN\Documents\GitHub\PlayM\Pupi\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T11:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\joshd_000.SOVEREIGN\Documents\GitHub\PlayM\Pupi\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+      <Modified>2014-01-30T15:59:34.044</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\joshd_000.SOVEREIGN\Documents\GitHub\PlayM\Pupi\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-01-30T16:08:12.402</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\joshd_000.SOVEREIGN\Documents\GitHub\PlayM\Pupi\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2014-01-30T21:50:25.209</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\joshd_000.SOVEREIGN\Documents\GitHub\PlayM\Pupi\bin\Debug\Remote.xbf">
+      <PackagePath>Remote.xbf</PackagePath>
+      <Modified>2014-01-30T21:53:17.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\joshd_000.SOVEREIGN\Documents\GitHub\PlayM\Pupi\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-01-30T21:23:22.981</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

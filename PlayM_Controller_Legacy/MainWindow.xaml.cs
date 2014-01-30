@@ -37,7 +37,8 @@ namespace PlayM_Controller_Legacy
             clientThread.Start();
         }
 
-        //Everything after this just calls client.send with the correct arguments. 
+        //Everything after this just calls client.send with the correct arguments.
+        //Key name is the 
 
         private void Btn_Enter_Click(object sender, RoutedEventArgs e)
         {
